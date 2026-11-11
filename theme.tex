@@ -1,0 +1,45 @@
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\definecolor{PageBackground}{HTML}{0D1117}
+\definecolor{BodyText}{HTML}{C9D1D9}
+\definecolor{HeadingText}{HTML}{F0F6FC}
+\definecolor{MutedText}{HTML}{8B949E}
+\definecolor{AccentText}{HTML}{58A6FF}
+
+\pagecolor{PageBackground}
+\color{BodyText}
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.42em}
+\setlength{\emergencystretch}{2em}
+
+\titleformat{\section}
+  {\color{HeadingText}\fontsize{16}{19}\selectfont\bfseries}
+  {}{0pt}{}
+\titleformat{\subsection}
+  {\color{HeadingText}\fontsize{12}{15}\selectfont\bfseries}
+  {}{0pt}{}
+\titleformat{\subsubsection}
+  {\color{HeadingText}\fontsize{10}{13}\selectfont\bfseries}
+  {}{0pt}{}
+
+\titlespacing*{\section}{0pt}{0pt}{0.65em}
+\titlespacing*{\subsection}{0pt}{1.0em}{0.35em}
+\titlespacing*{\subsubsection}{0pt}{0.8em}{0.3em}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.08em,topsep=0.25em,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.08em,topsep=0.25em,parsep=0pt}
+\renewcommand{\labelitemi}{\textcolor{MutedText}{\small\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{MutedText}{\scriptsize\textbullet}}
+
+\AtBeginDocument{
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=AccentText,
+    urlcolor=AccentText,
+    citecolor=AccentText
+  }
+}

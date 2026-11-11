@@ -1,0 +1,6 @@
+# 个人笔记不进仓库
+/todo.md
+
+# 渲染产物只保留示例图
+/output/*
+!/output/example.png
